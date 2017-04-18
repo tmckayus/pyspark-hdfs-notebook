@@ -1,4 +1,4 @@
-FROM mattf/workshop:base
+FROM radanalyticsio/base-notebook
 
 ENV NB_USER=nbuser
 ENV NB_UID=1011
@@ -9,4 +9,3 @@ USER root
 RUN chmod g+rw /notebooks/PySpark_HDFS.ipynb
 
 USER $NB_USER
-CMD ["/start.sh"]
